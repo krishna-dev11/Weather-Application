@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| weather app</title>
+    <link rel="shortcut icon" href="assets/humidity.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+      
+    <!-- always one top conatiner -->
+     <div always-top-on>
+        <h1>WEATHER APP</h1>
+        <div your-and-seach-weather>
+            <Button class="switchbuttons"  yourtab>Your Weather</Button>
+            <Button class="switchbuttons" searchtab>Search Weather</Button>
+        </div>
+     </div>
+    <!-- always one top conatiner end-->
+
+
+     <!-- grant access container start -->
+     <div grant-access-container>
+        <img src="assets/location.png" alt="_blank" loading="lazy" width="90rem">
+        <div grantaccess2>
+            <h2>Grant Location Acess</h2>
+            <p>Allow Access To get Wheather Information</p>
+            <button  grantaccessbutton>GRANT ACCESS</button>
+        </div>
+    </div>
+     <!-- grant access container end -->
+
+
+     <!-- loading start-->
+    <div class="loadingconatiner">
+        <img src="assets/loading.gif" alt="" loading="lazy" width="200rem">
+    </div>
+     <!-- loading end -->
+
+      <!-- your location conatiner -->
+       <div my-weather>
+        <div class="citynamecontainer">
+            <p cityname>Ujjain</p>
+            <img src="assets/wind.png" loading="lazy" width="50rem" alt="">
+        </div>
+        <pm conditon>Clear Sky</pm>
+        <img src="assets/wind.png" alt="" loading="lazy" width="70rem">
+        <h1>31.87 C</h1>
+        <div wind-humid-cloud-container>
+            <div class="my-weather-glass-boxes">
+                <img src="assets/wind.png"  loading="lazy" width="50rem" alt="">
+                <p>WINDSPEED</p>
+                <p>0.6m/s</p>
+            </div>
+            <div class="my-weather-glass-boxes">
+                <img src="assets/humidity.png"  loading="lazy" width="50rem" alt="">
+                <p>HUMIDITY</p>
+                <p>37%</p>
+            </div>
+            <div class="my-weather-glass-boxes">
+                <img src="assets/cloud.png"  loading="lazy" width="50rem" alt="">
+                <p>CLOUDS</p>
+                <p>0%</p>
+            </div>
+        </div>
+       </div>
+      <!-- your location conatiner end-->
+
+
+      <!-- search-weather-container staart -->
+      <form class="search-weather-container">
+
+        <div class="inputdebhaimeko">
+            <input type="search" name="" placeholder="search for City..." id="" citysearchinput>
+            <div class="boxformagnifineglass">
+                <img src="assets/search.png" alt="_blank" loading="lazy" width="30rem">
+            </div>
+        </div>
+      </form>
+      <!-- search-weather-container end --> 
+
+
+    </div>
+
+    <!-- script  -->
+     <script src="script.js"></script>
+</body>
+</html>
