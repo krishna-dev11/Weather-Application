@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 .wrapper
 {
    height: 100vh;
@@ -59,7 +60,7 @@
 
 /* grant access container start */
 
-[grant-access-container]
+.grant-access-container
 {   position: absolute;
     width: 100vw;
     display: flex;
@@ -68,7 +69,7 @@
     justify-content: center;
     gap: 2rem;
     z-index: 1;
-    /* opacity: 0;  */
+    opacity: 0;
     /* imp */
  }
 
@@ -83,7 +84,7 @@
 }
 
 
-[grantaccessbutton]
+.grantaccessbutton
 {
     appearance: none;
     border: none;
@@ -96,15 +97,21 @@
     backdrop-filter: blur(5.4px);
     -webkit-backdrop-filter: blur(5.4px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+
 }
 
-[grantaccessbutton]:hover
+.grantaccessbutton:hover
 {
     scale: 1.05;
 }
 
 /* grant access container end */
 
+.trans
+{
+    transform: translateY(100px);
+}
 
 /* lloading  */
 .loadingconatiner
@@ -117,10 +124,21 @@
 }
 /* loading end */
 
+/* not found */
+.notfound
+{
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; 
+}
+
 
 /* your location container start */
 
-[my-weather]
+.my-weather
 {   position: absolute;
     width: 100vw;
     display: flex;
@@ -178,11 +196,13 @@
 /* search wheather container  start*/
 
 .search-weather-container
-{
+{   
+    position: absolute;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
     opacity: 0;
+    z-index: 10;
 }
 
 .inputdebhaimeko
@@ -190,6 +210,7 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+    width: 100vw;
 }
 
 .boxformagnifineglass
@@ -232,5 +253,64 @@
 }
 
 
-
+.active
+{
+    opacity: 1;
+}
 /* search-weather-container end */
+
+
+/* sesrch weather container start */
+
+.search-weather
+{   position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* imp */
+    opacity: 0;
+}
+
+.searchcitynamecontainer
+{   
+    display: flex;
+    gap: 10px;
+}
+
+[searchcityname]
+{
+    font-size: 2rem;
+}
+
+[searchconditon]
+{
+    font-size:1.3rem 
+}
+
+[searchwind-humid-cloud-container]
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.searchmy-weather-glass-boxes
+{   
+    width: 10rem;
+    height: 9rem;
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+/*search  weather container  end */
